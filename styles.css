@@ -14,6 +14,7 @@ body {
 	padding: 54px 14px 15px;
 	margin: 0 auto;
 	width: 837px;
+	-webkit-box-sizing: content-box;
 }
 
 .dashboard {
@@ -67,6 +68,11 @@ textarea.tweet-compose {
 
 .tweet-controls {
 	text-align: right;
+	
+}
+
+#initiallyHiddenBlock{
+	display: none;
 }
 
 .tweet-controls div {
@@ -90,17 +96,26 @@ textarea.tweet-compose {
 	font-weight: bold;
 }
 
-.char-count {
+.counter {
 	font-size: 14px;
 	color: #999;
 	text-shadow: 0 1px 1px rgba(255,255,255,.75);
 }
+
+.overlimit {
+	color: red;
+}
+
 
 .main {
 	float: right;
 	width: 522px;
 	background-color: white;
 	border-radius: 6px;
+}
+button.enabled {
+	background-color: rgba(0,35,160,1);
+	color: white;
 }
 
 .main h2 {
